@@ -1,0 +1,51 @@
+<p>
+    projects works!
+</p>
+
+
+<Div>
+    <ul>
+        <button (click)="NaviHome()">Navigate to Home</button>
+    </ul>
+</Div>
+
+<!--templet Forms Templet sample, details on Udemy section 18 with integration of data -->
+<Div>
+    <form formGroup ="profileForm" (ngSubmit)="onSubmit()">
+        <label>
+            First Nmae:
+            <input type="text" formControlName="firstName">
+        </label>
+        <br><br>
+        <label>
+            Last Nmae:
+            <input type="text" formControlName="lastName">
+        </label>
+        <br><br>
+
+
+        <div formgroupName="address">
+            <h3>Adress</h3>
+            <label>
+                Street:
+                <input type="text" formControlName="street">
+            </label>
+            <br>
+            <label>
+                City:
+                <input type="text" formControlName="city">
+            </label>
+            <br>
+            <label>
+                State:
+                <input type="text" formControlName="state">
+            </label>
+            <br>
+            <label>
+                Zip Code:
+                <input type="text" formControlName="zip">
+            </label>
+        </div>
+        <button type="submit"> Submit </button>
+    </form>
+</Div>
